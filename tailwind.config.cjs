@@ -4,7 +4,12 @@ const config = {
 		"./src/**/*.{html,js,svelte,ts}",
 	],
 	theme: {
-		extend: {},
+		extend: {
+			fontFamily: {
+				headline: "Playfair Display, sans-serif",
+				general: "Inter, sans-serif",
+			}
+		},
 	},
 	plugins: [],
 };
