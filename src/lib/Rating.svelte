@@ -4,8 +4,6 @@
     import { FontAwesomeIcon, FontAwesomeLayers, FontAwesomeLayersText } from 'fontawesome-svelte';
 
     export let rating, text;
-
-    console.log(rating);
 </script>
 
 <div>

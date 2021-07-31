@@ -4,12 +4,12 @@
     export let product;
 </script>
 
-<div class="my-3 p-3 rounded border-2 flex flex-col space-y-3">
-    <a href="{`/product/${product.id}`}">
-        <img src={product.image} alt="Image of product">
+<div class="mx-6 sm:mx-2 my-3 p-3 rounded border-2 flex flex-col space-y-3 shadow-md">
+    <a href="/product/{product._id - 1}">
+        <img src={product.image} alt={`Product: ${product.name}`}>
     </a>
-    <a href="/">
-        <h3 class="font-general font-semibold text-sm">{product.name}</h3>
+    <a href="/product/{product._id}">
+        <h3 class="font-general font-semibold text-sm hover:underline">{product.name}</h3>
     </a>
     <Rating rating={product.rating} text={`${product.numReviews} reviews`}/>
     
